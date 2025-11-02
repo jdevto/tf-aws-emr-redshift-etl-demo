@@ -1,0 +1,10 @@
+{"transaction_id":"TXN001","amount":125.50,"date":"2024-01-15","category_id":1,"customer_id":"CUST001"}
+{"transaction_id":"TXN002","amount":45.99,"date":"2024-01-15","category_id":2,"customer_id":"CUST002"}
+{"transaction_id":"TXN003","amount":89.75,"date":"2024-01-16","category_id":3,"customer_id":"CUST001"}
+{"transaction_id":"TXN004","amount":234.20,"date":"2024-01-16","category_id":4,"customer_id":"CUST003"}
+{"transaction_id":"TXN005","amount":67.25,"date":"2024-01-17","category_id":5,"customer_id":"CUST002"}
+{"transaction_id":"TXN006","amount":156.80,"date":"2024-01-17","category_id":6,"customer_id":"CUST004"}
+{"transaction_id":"TXN007","amount":32.50,"date":"2024-01-18","category_id":7,"customer_id":"CUST001"}
+{"transaction_id":"TXN008","amount":98.40,"date":"2024-01-18","category_id":8,"customer_id":"CUST005"}
+{"transaction_id":"TXN009","amount":211.90,"date":"2024-01-19","category_id":9,"customer_id":"CUST003"}
+{"transaction_id":"TXN010","amount":54.60,"date":"2024-01-19","category_id":10,"customer_id":"CUST002"}

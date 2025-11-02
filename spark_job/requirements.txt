@@ -1,0 +1,2 @@
+# PySpark is included in EMR Serverless, no additional packages needed
+# Redshift JDBC driver is available in EMR: com.amazon.redshift:redshift-jdbc42
