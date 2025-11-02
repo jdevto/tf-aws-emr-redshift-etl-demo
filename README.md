@@ -247,7 +247,7 @@ aws athena get-query-results --query-execution-id $QUERY_ID --region $REGION --o
 - **S3 Encryption**: AES256 (default) or KMS (optional)
 - **Secrets Manager**: Redshift credentials stored securely
 - **Public Access Block**: S3 buckets block public access
-- **Force Destroy**: S3 bucket and KMS keys can be force-deleted for cleanup
+- **Force Destroy**: S3 bucket, Athena workgroup, and KMS keys can be force-deleted for cleanup
 
 ## ETL Job Details
 
@@ -354,11 +354,15 @@ This will:
 - Delete KMS keys (7-day deletion window)
 - Clean up IAM roles and policies
 
-**Note**: KMS keys have a 7-day deletion window. To force immediate deletion (not recommended for production):
+**Notes**:
 
-```bash
-aws kms schedule-key-deletion --key-id <key-id> --pending-window-in-days 7
-```
+- **KMS keys**: Have a 7-day deletion window. To force immediate deletion (not recommended for production):
+
+  ```bash
+  aws kms schedule-key-deletion --key-id <key-id> --pending-window-in-days 7
+  ```
+
+- **Athena workgroup**: Configured with `force_destroy = true` to allow deletion even with query history.
 
 ## Cost Considerations
 
