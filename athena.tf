@@ -14,6 +14,8 @@ resource "aws_athena_workgroup" "curated" {
     }
   }
 
+  force_destroy = true
+
   tags = merge(local.common_tags, {
     Name = "${local.name_prefix}-curated-workgroup"
   })
